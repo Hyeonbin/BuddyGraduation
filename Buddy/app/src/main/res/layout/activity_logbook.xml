@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/floating_logbook">
+
+    <TextView
+        android:id="@+id/Buddy_Logbook_Nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="데이터가 없습니다\n\n+버튼을 눌러 다이어리를 추가해주세요"
+        android:textSize="20dp"
+        android:textColor="#D2D2D2"/>
+
+    <ExpandableListView
+        android:id="@+id/Buddy_Logbook_Listview"
+        android:groupIndicator="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/><!--로그북을 넣기 위한 리스트뷰-->
+
+</LinearLayout>

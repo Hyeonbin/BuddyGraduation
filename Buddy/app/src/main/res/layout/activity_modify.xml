@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/Buddy_Modify_Topbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/Buddy_Modify_Backbtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_arrow_left_b" /><!--백 버튼-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="다이어리 수정"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            /><!--앱 타이틀-->
+
+    </RelativeLayout> <!-- 상단 버튼 -->
+
+    <ScrollView
+        android:id="@+id/Buddy_Modify_Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"><!--전체 스크롤-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"><!--시간 칸-->
+
+            <LinearLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시간"
+                    android:textSize="18dp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/Buddy_Modify_Year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="3dp"/><!--년-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="3dp"/>
+
+                <TextView
+                    android:id="@+id/Buddy_Modify_Month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="3dp"/><!--월-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="3dp"/>
+
+                <TextView
+                    android:id="@+id/Buddy_Modify_Day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="3dp"/><!--일-->
+
+                <TextView
+                    android:id="@+id/Buddy_Modify_Hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="3dp"/><!--시간-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="3dp"/>
+
+                <TextView
+                    android:id="@+id/Buddy_Modify_Min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="3dp"/><!--분-->
+
+                <TextView
+                    android:id="@+id/Buddy_Modify_Ampm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PM"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="3dp"/><!--오전, 오후-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC" /> <!-- 구분선 -->
+
+            <LinearLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"><!--장소 칸-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="장소"
+                    android:textSize="18dp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/Buddy_Modify_Location"
+                    android:layout_width="205dp"
+                    android:layout_height="40dp"
+                    android:textSize="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_shape"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:theme="@style/MyAlertDialogTheme"/><!--장소 입력 에딧텍스트-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC" /> <!-- 구분선 -->
+
+            <LinearLayout
+                android:id="@+id/Buddy_Modify_Nophoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="사진을 추가하시려면 클릭하세요"
+                    android:textSize="20dp"
+                    android:textColor="#D2D2D2"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/Buddy_Modify_Photo"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/photo"
+                android:visibility="gone"/><!--사진 저장-->
+
+            <View
+                android:id="@+id/Buddy_Modify_Mealline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC" /><!-- 구분선 -->
+
+            <LinearLayout
+                android:id="@+id/Buddy_Modify_Meallayout"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"><!--혈당 칸-->
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/meal"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/Buddy_Modify_Meal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="선택 시 길게 클릭"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:padding="10dp"
+                    android:background="#93DAFF"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/Buddy_Modify_Glucoseline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC" /> <!-- 구분선 -->
+
+            <LinearLayout
+                android:id="@+id/Buddy_Modify_Glucoselayout"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"><!--혈당 칸-->
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/blood"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/Buddy_Modify_Glucose"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_shape"
+                    android:singleLine="true"
+                    android:digits="0123456789"
+                    android:textCursorDrawable="@null"
+                    android:theme="@style/MyAlertDialogTheme"/><!--혈당 입력 에딧텍스트-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mg/dL"
+                    android:textSize="18dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC" /> <!-- 구분선 -->
+
+            <LinearLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"><!--다이어리 칸-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="다이어리"
+                    android:textSize="18dp"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/Buddy_Modify_Diary"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:gravity="top"
+                    android:textSize="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edittext_shape"
+                    android:minLines="6"
+                    android:singleLine="false"
+                    android:scrollbars="vertical"
+                    android:theme="@style/MyAlertDialogTheme"
+                    /><!--다이어리 입력 에딧텍스트-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/Buddy_Modify_Savebtn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="수 정"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:background="#93DAFF"/><!--저장 버튼-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

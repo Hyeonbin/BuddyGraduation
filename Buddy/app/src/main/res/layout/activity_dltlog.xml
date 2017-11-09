@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/Buddy_Dltlog_Backbtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_arrow_left_b" /><!--백 버튼-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="다이어리 삭제"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            /><!--앱 타이틀-->
+
+    </RelativeLayout> <!-- 상단 버튼 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/Buddy_Dltlog_Allselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/icon_success"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체 선택"
+                android:textColor="#c62828"
+                android:textSize="16dp"/>
+
+        </LinearLayout> <!-- 전체 선택 버튼 -->
+
+        <LinearLayout
+            android:id="@+id/Buddy_Dltlog_Unselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/btn_delete"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="선택 취소"
+                android:textColor="#5e5e5e"
+                android:textSize="16dp"/>
+
+        </LinearLayout> <!-- 선택 삭제 버튼 -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/Buddy_Dltlog_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/delete"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="선택 삭제"
+                android:textColor="#5e5e5e"
+                android:textSize="16dp"/>
+
+        </LinearLayout> <!-- 선택 삭제 버튼 -->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" /> <!-- 구분선 -->
+
+    <TextView
+        android:id="@+id/Buddy_Dltlog_Nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="데이터가 없습니다"
+        android:textSize="20dp"
+        android:textColor="#D2D2D2"/>
+
+    <ListView
+        android:id="@+id/Buddy_Dltlog_Listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

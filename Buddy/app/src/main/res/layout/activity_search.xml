@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/Buddy_Search_Category"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_nav_menu_b" />
+
+        <EditText
+            android:id="@+id/Buddy_Search_Edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:hint="다이어리로 검색"
+            android:gravity="left"
+            android:padding="10dp"
+            android:background="@drawable/edittext_shape"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textCursorDrawable="@null"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:theme="@style/MyAlertDialogTheme"/><!--장소 입력 에딧텍스트-->
+
+        <ImageView
+            android:id="@+id/Buddy_Search_Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" /> <!-- 구분선 -->
+
+    <TextView
+        android:id="@+id/Buddy_Search_Nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="데이터가 없습니다"
+        android:textSize="20dp"
+        android:textColor="#D2D2D2"/>
+
+    <ListView
+        android:id="@+id/Buddy_Search_Listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>
