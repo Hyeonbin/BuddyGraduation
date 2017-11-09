@@ -19,7 +19,7 @@ BUDDY
 ▶ 사용자정보 : 사용자의 정보를 입력하는 기능
 ▶ 설정 : 푸시알람 기능이 있고 케어센스몰 및 아이센스 홈페이지로 연결이 가능하며 개발자에게 문의할 수 있는 기능
 
-![ex_screenshot](./img/pic1)
+![ex_screenshot](./img/pic1.png)
 
 ## Main Screen - 첫 번째 Fragment
 사용자의 혈당 데이터를 그래프로 나타내주는 fragment입니다.   
