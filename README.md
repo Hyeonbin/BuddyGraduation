@@ -21,7 +21,7 @@ BUDDY
 
 ## Main Screen - 첫 번째 Fragment
 
-<img src="./img/pic1.png" width="40%" height="70%">. <img src="./img/pic3.png" width="40%" height="80%">
+<img src="./img/pic1.png" width="40%" height="70%">                     <img src="./img/pic3.png" width="40%">
 
 사용자의 혈당 데이터를 그래프로 나타내주는 fragment입니다.   
 하단의 floating action button 클릭 시, 어떠한 그래프를 선택할지 정하는 버튼이 나옵니다.
